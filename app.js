@@ -9,13 +9,13 @@ let valMax    = document.getElementById("val_max");
 // SEPACION ENTRE EL VALOR MINIMO Y EL MAXIMO
 let minGap    = 100;
 
-
+// FUNCIONS CUAN HI HAN CANVIS AL SLIDER
 function slideMin(){
   if(parseInt(sliderMax.value) - parseInt(sliderMin.value) <= minGap){
     sliderMin.value = parseInt(sliderMax.value) - minGap;
   }
 
-  valMin.textContent = sliderMin.value;
+  valMin.value = sliderMin.value;
 }
 
 function slideMax(){
@@ -23,5 +23,14 @@ function slideMax(){
     sliderMax.value = parseInt(sliderMin.value) + minGap;
   }
   
-  valMax.textContent = sliderMax.value;
+  valMax.value = sliderMax.value;
+}
+
+// FUNCIONS CUAN HI HA CANVI AL INPUT
+function inputMin(){
+  sliderMin.value = valMin.value;
+}
+
+function inputMax(){
+  sliderMax.value = valMax.value;
 }
