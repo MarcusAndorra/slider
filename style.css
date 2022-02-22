@@ -89,3 +89,8 @@ input[type="range"]:active::-webkit-slider-thumb{
   justify-content: space-between;
 }
 
+.marcadores input{
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
