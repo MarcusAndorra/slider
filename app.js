@@ -9,7 +9,7 @@ let valMax    = document.getElementById("val_max");
 // SEPACION ENTRE EL VALOR MINIMO Y EL MAXIMO
 let minGap    = 100;
 
-// FUNCIONS CUAN HI HAN CANVI ALS SLIDER
+// FUNCIONS CUAN HI HAN CANVIS ALS SLIDERS
 function slideMin(){
   if(parseInt(sliderMax.value) - parseInt(sliderMin.value) <= minGap){
     sliderMin.value = parseInt(sliderMax.value) - minGap;
@@ -26,7 +26,10 @@ function slideMax(){
   valMax.value = sliderMax.value;
 }
 
-// FUNCIONS CUAN HI HA CANVI AL INPUT
+
+
+
+// FUNCIONS CUAN HI HA KEYUP ALS INPUT
 function inputMin(){
   sliderMin.value = valMin.value;
 }
